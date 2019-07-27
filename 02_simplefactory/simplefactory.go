@@ -1,4 +1,4 @@
-package chapter02
+package simplefactory
 
 import "fmt"
 
