@@ -2,13 +2,12 @@ package facade
 
 import "fmt"
 
-func Facade() {
-	api := &ApiImpl{
+func Init() Api {
+	return &ApiImpl{
 		a: &AModuleImpl{},
 		b: &BModuleImpl{},
 		c: &CModuleImpl{},
 	}
-	api.Test()
 }
 
 type Api interface {
