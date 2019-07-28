@@ -13,6 +13,6 @@ type ExportDBFileOperate struct {
 	ExportOperate
 }
 
-func (o *ExportDBFileOperate) factoryMethod() ExportFileApi {
+func (o *ExportDBFileOperate) FactoryMethod() ExportFileApi {
 	return &ExportDBFile{}
 }
