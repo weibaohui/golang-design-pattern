@@ -14,6 +14,6 @@ type ExportTxtFileOperate struct {
 	ExportOperate
 }
 
-func (o *ExportTxtFileOperate) FactoryMethod() ExportFileApi {
+func (o *ExportTxtFileOperate) Create() ExportFileApi {
 	return &ExportTxtFile{}
 }

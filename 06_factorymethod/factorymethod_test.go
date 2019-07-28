@@ -4,10 +4,10 @@ import "testing"
 
 func TestExport(t *testing.T) {
 	dbFileOperate := &ExportDBFileOperate{}
-	Export(dbFileOperate.FactoryMethod(), "测试数据")
+	Export(dbFileOperate.Create(), "测试数据")
 
 	txtFileOperate := &ExportTxtFileOperate{}
-	Export(txtFileOperate.FactoryMethod(), "测试数据")
+	Export(txtFileOperate.Create(), "测试数据")
 
 }
 
