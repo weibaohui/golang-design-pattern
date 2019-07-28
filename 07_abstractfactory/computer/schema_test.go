@@ -1,4 +1,4 @@
-package abstractfactory
+package computer
 
 import "testing"
 

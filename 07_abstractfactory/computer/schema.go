@@ -1,4 +1,4 @@
-package abstractfactory
+package computer
 
 type AbstractFactory interface {
 	CreateCPUApi() CPUApi
