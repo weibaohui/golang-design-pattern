@@ -12,7 +12,6 @@ func TestNewInstance(t *testing.T) {
 	if instance1 != instance2 {
 		t.Fatal("懒汉式 单例失败")
 	}
-
 }
 
 func TestGetHungryInstance(t *testing.T) {
