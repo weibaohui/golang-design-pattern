@@ -7,11 +7,11 @@ type ComputerEngineer struct {
 
 // 装机过程
 func (c *ComputerEngineer) MakeComputer(schema AbstractFactory) {
-	c.prepareHardwares(schema)
+	c.prepareHardware(schema)
 }
 
 // 准备所需的硬件
-func (c *ComputerEngineer) prepareHardwares(schema AbstractFactory) {
+func (c *ComputerEngineer) prepareHardware(schema AbstractFactory) {
 	// 使用抽象工厂获取相应的接口对象
 	c.cpu = schema.CreateCPUApi()
 	c.mainboard = schema.CreateMainboardApi()
