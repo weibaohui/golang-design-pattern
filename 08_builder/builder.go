@@ -9,6 +9,7 @@ type Builder interface {
 	Result() string
 }
 
+//
 type TxtBuilder struct{ result string }
 
 func (b *TxtBuilder) BuildHeader(str string) {
