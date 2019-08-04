@@ -34,5 +34,6 @@ func (s *Subject) SetContent(content string) {
 }
 
 func (s *Subject) GetContent() string {
+
 	return s.content
 }
