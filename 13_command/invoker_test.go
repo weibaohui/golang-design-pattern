@@ -5,6 +5,7 @@ import "testing"
 func TestRun(t *testing.T) {
 	receiver := &Receiver{}
 	command := NewConcreteCommand(receiver)
-	invoker := NewInvoker(command)
+	invoker := &Invoker{}
+	invoker.SetCommand(command)
 	invoker.RunCommand()
 }
