@@ -4,6 +4,9 @@ type ConcreteAggregate struct {
 	ss []string
 }
 
+func NewConcreteAggregate(ss []string) *ConcreteAggregate {
+	return &ConcreteAggregate{ss: ss}
+}
 func (c *ConcreteAggregate) CreateIterator() Iterator {
 	return NewConcreteIterator(c)
 }
