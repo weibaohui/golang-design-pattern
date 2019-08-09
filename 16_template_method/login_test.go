@@ -19,6 +19,7 @@ func TestRun(t *testing.T) {
 	} else {
 		fmt.Println("登录 工作 平台失败")
 	}
+
 	if ok := normalLogin.Login(user); ok {
 		fmt.Println("登录  普通 平台成功")
 	} else {
