@@ -1,6 +1,8 @@
 package inner
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type VoteState interface {
 	Vote(user, item string, m VoteManager)
